@@ -1,15 +1,15 @@
-# AM32-MultiRotor-ESC-firmware
+# AM32-MultiRotor-ESC-firmware_S.Port
 Firmware for ARM based speed controllers
 <p align="left">
   <a href="/LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0-brightgreen" alt="GitHub license" /></a>
 </p>
 
-The AM32 firmware is designed for STM32 ARM processors to control a brushless motor (BLDC).
-The firmware is intended to be safe and fast with smooth fast startups and linear throttle. It is meant for use with multiple vehicle types and a flight controller. The firmware can also be built with support for crawlers. For crawler usage please read this wiki page [Crawler Hardware](https://github.com/AlkaMotors/AM32-MultiRotor-ESC-firmware/wiki/Crawler-Hardware-and-AM32)
+The TNL AM32 firmware is designed for STM32 ARM processors to control a brushless motor (BLDC).
+The firmware is intended to be safe and fast with smooth fast startups and linear throttle. It ~~has been~~ is being modified to support S.Port and FrSky Recievers, this was specifically modfied for use with Team Ninth Life Robots.
 
 ## Features
 
-AM32 has the following features:
+TNL AM32 has the following features:
 
 - Firmware upgradable via betaflight passthrough, single wire serial or arduino
 - Servo PWM, Dshot(300, 600) motor protocol support
@@ -17,6 +17,8 @@ AM32 has the following features:
 - KISS standard ESC telemetry
 - Variable PWM frequency
 - Sinusoidal startup mode, which is designed to get larger motors up to speed
+- Compatability with S.Port (soon)
+
 ## Build instructions
 -"make" - builds all targets
 -"make AM32_XXX_F051 builds" a speciic target
@@ -25,7 +27,7 @@ AM32 has the following features:
 
 ## Firmware Release & Configuration Tool
 
-The latest release of the firmware can be found [here](https://github.com/AlkaMotors/AM32-MultiRotor-ESC-firmware/releases/).
+The latest release of the firmware can be found [here](https://github.com/MrPurpleSocks/AM32-MultiRotor-ESC-firmware/releases/).
 
 To configure AM32 and upload firmware you can use the Multi_ESC config tool using Betaflight passthrough. They can be downloaded from here:
 
@@ -38,11 +40,13 @@ Alternately you can use the [Online-ESC Configurator](https://esc-configurator.c
 
 ## Hardware
 AM32 currently has support for STSPIN32F0, STM32F051, STM32G071, GD32E230, AT32F415 and AT32F421.
+**TNL AM32 is officially designed for the STM32G071, but *should* work with any of the above.**
 The CKS32F051 is not recommended due to too many random issues.
-Target compatibility List can be found [here](https://github.com/AlkaMotors/AM32-MultiRotor-ESC-firmware/wiki/List-of-Supported-Hardware) (APR 2021)
+Target compatibility List can be found [here](https://github.com/MrPurpleSocks/AM32-MultiRotor-ESC-firmware/wiki/List-of-Supported-Hardware) (APR 2021)
 
 
 ## Installation & Bootloader
+This *should* remain the same as the original AM32 Repository
 
 To use AM32 firmware on a blank ESC, a bootloader must first be installed using an ST-LINK, GD-LINK , CMIS-DAP or AT-LINK.  THe bootloader will be dependant on the MCU used ont he esc . Choose the bootloader that matches the MCU type and signal input pin of the ESC.
 The compatibility chart has the bootloader pinouts listed.
@@ -52,7 +56,9 @@ After the bootloader has been installed the main firmware from can be installed 
 
 To update an existing AM32 bootloader an update tool can be found [here](https://github.com/AlkaMotors/F051_Bootloader_Updater/releases).
 
-## Support and Developers Channel
+## Official AM32 Support and Developers Channel
+These are for support with the original AM32 Repositiory. Support is not garunteeded for TNL AM32. 
+
 There are two ways you can get support or participate in improving am32.
 We have a discord server here:
 
@@ -69,7 +75,7 @@ If you wish to support the project please join the Patreon.
 https://www.patreon.com/user?u=44228479
 
 
-## Sponsors
+## Sponsors (of AM32, TNL doesn't have any offical ones)
 The AM32 project would not have made this far without help from the following sponsors:
 
 Holmes Hobbies - https://holmeshobbies.com/ - The project would not be where it is today without the support of HH. Check out the Crawlmaster V2 for the best am32 experience!
@@ -99,3 +105,14 @@ Markus Gritsch\
 Voodoobrew
 
 (and many more)
+
+## TNL AM32 Contributors
+MrPurpleSocks
+WooKei
+
+
+
+
+
+
+:3
