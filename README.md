@@ -40,7 +40,9 @@ Alternately you can use the [Online-ESC Configurator](https://esc-configurator.c
 
 ## Hardware
 AM32 currently has support for STSPIN32F0, STM32F051, STM32G071, GD32E230, AT32F415 and AT32F421.
+
 **TNL AM32 is officially designed for the STM32G071, but *should* work with any of the above.**
+
 The CKS32F051 is not recommended due to too many random issues.
 Target compatibility List can be found [here](https://github.com/MrPurpleSocks/AM32-MultiRotor-ESC-firmware/wiki/List-of-Supported-Hardware) (APR 2021)
 
@@ -107,12 +109,5 @@ Voodoobrew
 (and many more)
 
 ## TNL AM32 Contributors
-MrPurpleSocks
+MrPurpleSocks\
 WooKei
-
-
-
-
-
-
-:3
