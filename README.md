@@ -2,6 +2,8 @@
 Firmware for ARM based speed controllers
 <p align="left">
   <a href="/LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0-brightgreen" alt="GitHub license" /></a>
+  <img alt="Static Badge" src="https://img.shields.io/badge/test-this%20is%20a%20test-brightgreen?style=flat">
+
 </p>
 
 The TNL AM32 firmware is designed for STM32 ARM processors to control a brushless motor (BLDC).
