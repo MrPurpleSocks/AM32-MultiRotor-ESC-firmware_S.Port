@@ -12,12 +12,10 @@
 #ifndef SPORT_H_
 #define SPORT_H_
 
-void makeTelemPackage(uint8_t temp,
-		              uint16_t voltage,
-					  uint16_t current,
-					  uint16_t consumption,
-					  uint16_t e_rpm);
-
+void setup_uart();
+void sendResponse();
+void makeTelemPackage();
+uint8_t calculateCheksum(uint8_t *data, uint8_t length)
 
 void telem_UART_Init(void);
 void send_telem_DMA();
